@@ -61,3 +61,89 @@ string Rubickscube::getMove(MOVE id) {
             return "R2";
     }
 }
+
+Rubickscube &Rubickscube::move(MOVE id) {
+    switch(ind) {
+        case MOVE::U:
+            return this->u();
+        case MOVE::UPRIME:
+            return this->uPrime();
+        case MOVE:: U2:
+            return this->u2();
+        case MOVE::D:
+            return this->d();
+        case MOVE::DPRIME:
+            return this->dPrime();
+        case MOVE:: D2:
+            return this->d2();
+        case MOVE::L:
+            return this->l();
+        case MOVE::LPRIME:
+            return this->lPrime();
+        case MOVE:: L2:
+            return this->l2();
+        case MOVE::R:
+            return this->r();
+        case MOVE::RPRIME:
+            return this->rPrime();
+        case MOVE:: R2:
+            return this->r2();
+        case MOVE::F:
+            return this->f();
+        case MOVE::FPRIME:
+            return this->fPrime();
+        case MOVE:: F2:
+            return this->f2();
+        case MOVE::D:
+            return this->d();
+        case MOVE::DPRIME:
+            return this->dPrime();
+        case MOVE:: D2:
+            return this->d2();
+    }
+}
+
+Rubickscube &Rubickscube::invert(MOVE id) {
+    switch(ind) {
+        case MOVE::U:
+            return this->uPrime();
+        case MOVE::UPRIME:
+            return this->u();
+        case MOVE:: U2:
+            return this->u2();
+        case MOVE::D:
+            return this->dPrime();
+        case MOVE::DPRIME:
+            return this->d();
+        case MOVE:: D2:
+            return this->d2();
+        case MOVE::L:
+            return this->lPrime();
+        case MOVE::LPRIME:
+            return this->l();
+        case MOVE:: L2:
+            return this->l2();
+        case MOVE::R:
+            return this->rPrime();
+        case MOVE::RPRIME:
+            return this->r();
+        case MOVE:: R2:
+            return this->r2();
+        case MOVE::F:
+            return this->fPrime();
+        case MOVE::FPRIME:
+            return this->f();
+        case MOVE:: F2:
+            return this->f2();
+        case MOVE::D:
+            return this->dPrime();
+        case MOVE::DPRIME:
+            return this->d();
+        case MOVE:: D2:
+            return this->d2();
+    }
+}
+
+
+
+

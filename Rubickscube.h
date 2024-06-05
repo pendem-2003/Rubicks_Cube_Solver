@@ -43,9 +43,18 @@ public:
       D, DPRIME, D2
    };
 
+   //Return first letter of the colour
+   //Eg : GREEN gives G
    static char getColorLetter(COLOR color);
 
+   //Return move is string Format
    static string getMove(MOVE id);
+
+   //Peform a move on cube with id face
+   Rubickscube &move(MOVE id);
+
+   //Perform invert move on cube with id face
+   Rubickscube &invert(MOVE id);
 };
 
 
