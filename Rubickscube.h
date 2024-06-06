@@ -55,6 +55,51 @@ public:
 
    //Perform invert move on cube with id face
    Rubickscube &invert(MOVE id);
+
+   //Printing the whole cube configuratiom
+   void print() const;
+
+   virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
+
+   virtual Rubickscube &f() = 0;
+
+   virtual Rubickscube &fPrime() = 0;
+
+   virtual Rubickscube &f2() = 0;
+
+   virtual Rubickscube &b() = 0;
+
+   virtual Rubickscube &bPrime() = 0;
+
+   virtual Rubickscube &b2() = 0;
+
+   virtual Rubickscube &r() = 0;
+
+   virtual Rubickscube &rPrime() = 0;
+
+   virtual Rubickscube &r2() = 0;
+
+   virtual Rubickscube &l() = 0;
+
+   virtual Rubickscube &lPrime() = 0;
+
+   virtual Rubickscube &l2() = 0;
+
+   virtual Rubickscube &u() = 0;
+
+   virtual Rubickscube &uPrime() = 0;
+
+   virtual Rubickscube &u2() = 0;
+
+   virtual Rubickscube &d() = 0;
+
+   virtual Rubickscube &dPrime() = 0;
+
+   virtual Rubickscube &d2() = 0;
+
+   string getCornerColorString(uint8_t ind) const;
+
+
 };
 
 
