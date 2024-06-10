@@ -207,6 +207,18 @@ void Rubickscube::print() const{
 
 }
 
+vector<Rubickscube::MOVE> Rubickscube::randomShufflCube(unsigned int times) {
+    vector<MOVE> moves_applied;
+    srand(time(0));
+    for (unsigned int i=0;i<times;i++) {
+        unsigned int selectedmove = (rand()%18);
+        moves_applied.push_back(static_cast<MOVE>(selectedmove));
+        this->move(static_cast<MOVE>(selectedmove));
+    }
+    return moves_applied;
+}
+
+
 string Rubickscube::getCornerColorString(uint8_t ind) const {
     string st = "";
 
@@ -269,6 +281,24 @@ string Rubickscube::getCornerColorString(uint8_t ind) const {
     }
     return st;
 }
+
+uint8_t Rubickscube::getCornerIndex(uint8_t ind) const {
+    string corner = getCornerColorString(ind);
+
+    uint8_t val = 0;
+
+    for (auto c : corner) {
+        if (c=='G')val |= (1<<0);
+        if (c=='O')val |= (1<<1);
+        if (c=='Y')val |= (1<<2);
+    }
+
+    return val;
+
+}
+
+
+
 
 
 

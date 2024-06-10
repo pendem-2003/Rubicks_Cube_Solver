@@ -99,6 +99,13 @@ public:
 
    string getCornerColorString(uint8_t ind) const;
 
+   uint8_t getCornerIndex(uint8_t ind) const;
+
+   uint8_t getCornerOrientation(uint8_t ind) const;
+
+
+   //Shuffle the cube with 'times' moves and return the moves performed
+   vector<MOVE> randomShufflCube(unsigned int times);
 
 };
 
