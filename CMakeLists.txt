@@ -7,4 +7,4 @@ add_executable(Rubicks_Cube_Solver main.cpp
         Rubickscube.cpp
         Rubickscube.h
         Rubickscube3dArray.cpp
-        Rubickscube3dArray.h)
+)
