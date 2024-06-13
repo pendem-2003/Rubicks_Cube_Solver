@@ -1,3 +1,9 @@
 # ninja log v6
-163	630	7393049198221895	CMakeFiles/Rubicks_Cube_Solver.dir/Rubickscube3dArray.cpp.obj	d535793b76cdac2c
+125	3977	7399969809151170	CMakeFiles/Rubicks_Cube_Solver.dir/Rubickscube3dArray.cpp.obj	d535793b76cdac2c
+37	587	7399972806761384	build.ninja	c40d5360006931f0
 85	1344	7393049197431243	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+4351	4920	7399958199665721	Rubicks_Cube_Solver.exe	d03f2fc99fe7a2dc
+114	4443	7399969809051167	CMakeFiles/Rubicks_Cube_Solver.dir/Rubickscube.cpp.obj	4f45cd5903c0c315
+6	726	7399972806761384	build.ninja	c40d5360006931f0
+58	6955	7399972808177863	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube3dArray.cpp.obj	74ca7d390304c92
+50	7086	7399972808097853	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube.cpp.obj	f5e10da591ed2694

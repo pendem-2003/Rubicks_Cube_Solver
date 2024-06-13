@@ -8,6 +8,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 /* A base class for all Rubick's Cube Models. There are various representations of Rubick's cube.
    Each one has it's own special kind of definations. This class provides a shared functanality.
    We will see which is best on Performance*/
