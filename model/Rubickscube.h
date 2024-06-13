@@ -62,6 +62,8 @@ public:
 
    virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
 
+   virtual bool isSolved() const = 0;
+
    virtual Rubickscube &f() = 0;
 
    virtual Rubickscube &fPrime() = 0;

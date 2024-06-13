@@ -7,3 +7,7 @@
 6	726	7399972806761384	build.ninja	c40d5360006931f0
 58	6955	7399972808177863	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube3dArray.cpp.obj	74ca7d390304c92
 50	7086	7399972808097853	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube.cpp.obj	f5e10da591ed2694
+158	8957	7400012684460864	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube3dArray.cpp.obj	74ca7d390304c92
+50	9140	7400012683375541	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+139	9239	7400012684259831	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube.cpp.obj	f5e10da591ed2694
+9239	10045	7400012775265512	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
