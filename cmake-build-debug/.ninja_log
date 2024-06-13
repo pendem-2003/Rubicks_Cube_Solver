@@ -11,3 +11,14 @@
 50	9140	7400012683375541	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
 139	9239	7400012684259831	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube.cpp.obj	f5e10da591ed2694
 9239	10045	7400012775265512	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
+13	4440	7400016694127829	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+4441	4695	7400016738421928	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
+13	4196	7400017138085877	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+4197	4448	7400017179923235	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
+14	4735	7400017493133608	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+4737	4993	7400017540353123	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
+13	4651	7400017663492580	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+4652	4866	7400017709889863	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
+22	6232	7400018523516816	CMakeFiles/Rubicks_Cube_Solver.dir/model/Rubickscube3dArray.cpp.obj	74ca7d390304c92
+11	6380	7400018523406149	CMakeFiles/Rubicks_Cube_Solver.dir/main.cpp.obj	63db149b084d17fa
+6380	6668	7400018587105707	Rubicks_Cube_Solver.exe	e5c4d2bb15e2c7e8
