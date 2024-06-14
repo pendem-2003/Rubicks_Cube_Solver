@@ -8,4 +8,5 @@ add_executable(Rubicks_Cube_Solver main.cpp
         model/Rubickscube.h
         model/Rubickscube3dArray.cpp
         model/Rubickscube1dArray.cpp
+        model/RubickscubeBitboard.cpp
 )
