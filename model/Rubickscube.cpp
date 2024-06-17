@@ -297,6 +297,21 @@ uint8_t Rubickscube::getCornerIndex(uint8_t ind) const {
 
 }
 
+uint8_t Rubickscube::getCornerOrientation(uint8_t ind) const {
+    string corner = getCornerColorString(ind);
+
+    string actual_str = "";
+
+    for (auto c : corner) {
+        if (c != 'W' && c != 'Y')continue;
+        actual_str.push_back(c);
+    }
+
+    if (corner[1]==actual_str[0]) return 1;
+    else if (corner[2]==actual_str[0]) return 2;
+    else return 0;
+}
+
 
 
 
