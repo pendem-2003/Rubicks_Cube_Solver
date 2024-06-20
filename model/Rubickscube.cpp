@@ -150,10 +150,13 @@ void Rubickscube::print() const{
 
     for (int row=0;row<=2;row++) {
 
+        //cout<<"obito"<<"\n";
+
         for (int i=0;i<7;i++)cout<<" ";
 
         for (int col=0;col<=2;col++) {
-            cout<<getColorLetter(getColor(FACE::UP, row, col)) <<" ";
+            //cout<<getColorLetter(getColor(FACE::UP, row, col)) <<" ";
+            cout<<getColorLetter(getColor(FACE::UP, row, col))<<" ";
         }
 
         cout<<"\n";

@@ -40,7 +40,7 @@ public:
         }
     }
 
-    COLOR getcolor(FACE face, unsigned row, unsigned col) {
+    COLOR getColor(FACE face, unsigned row, unsigned col) const override {
         char color = cube[getIndex((int)face, (int)row, (int)col)];
         switch (color) {
             case 'B':
