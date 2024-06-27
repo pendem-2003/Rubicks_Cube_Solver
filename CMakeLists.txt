@@ -9,4 +9,5 @@ add_executable(Rubicks_Cube_Solver main.cpp
         model/Rubickscube3dArray.cpp
         model/Rubickscube1dArray.cpp
         model/RubickscubeBitboard.cpp
+        Solver/DFSSolver.h
 )

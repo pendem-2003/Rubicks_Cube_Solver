@@ -380,5 +380,26 @@ public:
         return ret;
     }
 
+    bool operator==(const RubickscubeBitboard &r1) const {
+        for (int i = 0; i < 6; i++) {
+            if (bitboard[i] != r1.bitboard[i]) return false;
+        }
+        return true;
+    }
 
+    RubickscubeBitboard &operator=(const RubickscubeBitboard &r1) {
+        for (int i = 0; i < 6; i++) {
+            bitboard[i] = r1.bitboard[i];
+        }
+        return *this;
+    }
+
+};
+
+struct HashBitboard {
+    size_t operator()(const RubickscubeBitboard &r1) const {
+        uint64_t final_hash = r1.bitboard[0];
+        for (int i = 1; i < 6; i++) final_hash ^= r1.bitboard[i];
+        return (size_t) final_hash;
+    }
 };
