@@ -24,5 +24,18 @@ int main() {
     c3.l();
     c3.print();
 
+    Rubickscube3dArray cl1, cl2;
+    cl1.print();
+    cl2.r();
+    cl2.print();
+    unordered_map<Rubickscube3dArray, int, Hash3d> mp;
+    mp[cl1] = 1;
+
+    if (mp[cl1])cout<<"It is Present"<<"\n";
+    else cout<<"Not Present"<<"\n";
+
+    if (mp[cl2])cout<<"It is Present"<<"\n";
+    else cout<<"Not Present"<<"\n";
+
     return 0;
 }
