@@ -4,6 +4,7 @@
 #include "model/Rubickscube1dArray.cpp"
 #include "model/Rubickscube3dArray.cpp"
 #include "Solver/DFSSolver.h"
+#include "Solver/BFSSolver.h"
 
 using namespace std;
 
@@ -40,6 +41,21 @@ int main() {
     // if (mp[cl2])cout<<"It is Present"<<"\n";
     // else cout<<"Not Present"<<"\n";
 
+    // Rubickscube3dArray r1, r2;
+    // r1.print();
+    //
+    // vector<Rubickscube::MOVE> movestoshuffle = r1.randomShufflCube(5);
+    // r1.print();
+    //
+    // for (auto move : movestoshuffle)cout<<r1.getMove(move)<<" ";
+    // cout<<"\n";
+    //
+    // DFSSolver<Rubickscube3dArray, Hash3d> dfssolver(r1, 7);
+    // vector<Rubickscube::MOVE> movestosolve = dfssolver.solve();
+    // dfssolver.rubickscube.print();
+    // for (auto move : movestosolve)cout<<r1.getMove(move)<<" ";
+    // cout<<"\n";
+
     Rubickscube3dArray r1, r2;
     r1.print();
 
@@ -49,11 +65,12 @@ int main() {
     for (auto move : movestoshuffle)cout<<r1.getMove(move)<<" ";
     cout<<"\n";
 
-    DFSSolver<Rubickscube3dArray, Hash3d> dfssolver(r1, 7);
-    vector<Rubickscube::MOVE> movestosolve = dfssolver.solve();
-    dfssolver.rubickscube.print();
+    BFSSolver<Rubickscube3dArray, Hash3d> bfssolver(r1);
+    vector<Rubickscube::MOVE> movestosolve = bfssolver.solve();
+    bfssolver.rubickscube.print();
     for (auto move : movestosolve)cout<<r1.getMove(move)<<" ";
     cout<<"\n";
+
     return 0;
 
 }
