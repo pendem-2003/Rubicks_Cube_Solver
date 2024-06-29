@@ -5,6 +5,7 @@
 #include "model/Rubickscube3dArray.cpp"
 #include "Solver/DFSSolver.h"
 #include "Solver/BFSSolver.h"
+#include "Solver/IDDFSSolver.h"
 
 using namespace std;
 
@@ -56,7 +57,7 @@ int main() {
     // for (auto move : movestosolve)cout<<r1.getMove(move)<<" ";
     // cout<<"\n";
 
-    Rubickscube3dArray r1, r2;
+    RubickscubeBitboard r1, r2;
     r1.print();
 
     vector<Rubickscube::MOVE> movestoshuffle = r1.randomShufflCube(5);
@@ -65,9 +66,9 @@ int main() {
     for (auto move : movestoshuffle)cout<<r1.getMove(move)<<" ";
     cout<<"\n";
 
-    BFSSolver<Rubickscube3dArray, Hash3d> bfssolver(r1);
-    vector<Rubickscube::MOVE> movestosolve = bfssolver.solve();
-    bfssolver.rubickscube.print();
+    IDDFSSolver<RubickscubeBitboard, HashBitboard> iddfssolver(r1, 7);
+    vector<Rubickscube::MOVE> movestosolve = iddfssolver.solve();
+    iddfssolver.rubickscube.print();
     for (auto move : movestosolve)cout<<r1.getMove(move)<<" ";
     cout<<"\n";
 
