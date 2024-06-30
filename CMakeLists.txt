@@ -12,4 +12,6 @@ add_executable(Rubicks_Cube_Solver main.cpp
         Solver/DFSSolver.h
         Solver/BFSSolver.h
         Solver/IDDFSSolver.h
+        PatternDatabases/NibbleArray.h
+        PatternDatabases/NibbleArray.cpp
 )
