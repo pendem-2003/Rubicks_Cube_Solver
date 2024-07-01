@@ -3,8 +3,8 @@
 //
 
 #include<bits/stdc++.h>
-#include "../Model/Rubickscube.h"
-//#include "../Model/PatternDatabase/PatternDatabase.h"
+#include "../model/Rubickscube.h"
+//#include "../model/PatternDatabase/PatternDatabase.h"
 #include "../PatternDatabases/CornerPatternDatabase.h"
 
 #ifndef RUBIKS_CUBE_SOLVER_IDASTARSOLVER_H
@@ -44,7 +44,7 @@ private:
 
 // returns {solved cube, bound}: if the cube was solved
 // returns {rubrickscube, next_bound}, if the cube was not solved
-    pair<T, int> IDAStar(int bound) {
+    pair<T, int> IDAstar(int bound) {
 //        priority_queue contains pair(Node, move done to reach that)
         priority_queue<pair<Node,int>, vector<pair<Node,int>>, compareCube> pq;
         Node start = Node(rubickscube, 0, cornerDB.getNumMoves(rubickscube));
@@ -76,7 +76,7 @@ private:
                 node.cube.invert(curr_move);
             }
         }
-        return make_pair((rubickscube, next_bound));
+        return make_pair(rubickscube, next_bound);
     }
 
 public:
