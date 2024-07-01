@@ -26,13 +26,13 @@ public:
 //   Testing for init_val
     PatternDatabase(const size_t size, uint8_t init_val);
 
-    virtual uint32_t getDatabaseIndex(const RubiksCube &cube) const = 0;
+    virtual uint32_t getDatabaseIndex(const Rubickscube &cube) const = 0;
 
-    virtual bool setNumMoves(const RubiksCube &cube, const uint8_t numMoves);
+    virtual bool setNumMoves(const Rubickscube &cube, const uint8_t numMoves);
 
     virtual bool setNumMoves(const uint32_t ind, const uint8_t numMoves);
 
-    virtual uint8_t getNumMoves(const RubiksCube &cube) const;
+    virtual uint8_t getNumMoves(const Rubickscube &cube) const;
 
     virtual uint8_t getNumMoves(const uint32_t ind) const;
 
@@ -51,3 +51,6 @@ public:
     virtual void reset();
 
 };
+
+
+#endif //RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H

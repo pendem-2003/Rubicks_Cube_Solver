@@ -23,7 +23,7 @@ public:
 
     const unsigned char *data() const;
 
-    size_t storagesize() const;
+    size_t storageSize() const;
 
     void inflate(vector<uint8_t> &dest) const;
 

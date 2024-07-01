@@ -44,7 +44,7 @@ const unsigned char *NibbleArray::data() const {
     return this->arr.data();
 }
 
-size_t NibbleArray::storagesize() const {
+size_t NibbleArray::storageSize() const {
     return this->arr.size();
 }
 
