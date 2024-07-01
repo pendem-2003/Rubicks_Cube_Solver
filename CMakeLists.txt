@@ -23,4 +23,5 @@ add_executable(Rubicks_Cube_Solver main.cpp
         PatternDatabases/math.cpp
         PatternDatabases/CornerDBMaker.h
         PatternDatabases/CornerDBMaker.cpp
+        Solver/IDAstarSolver.h
 )
