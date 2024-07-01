@@ -1,1 +1,1 @@
-Created **Rubiks-Cube-Solver** with efficient solving in lessthan steps
+Created **Rubiks-Cube-Solver** with efficient solving in fewer steps
